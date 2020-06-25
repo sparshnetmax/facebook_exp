@@ -1,8 +1,7 @@
 from facebook_business.api import FacebookAdsApi
 from facebook_business.adobjects.adaccount import AdAccount
 from facebook_business.session import FacebookSession
-session = FacebookSession.debug
-print(session)
+
 def createCampaign(my_app_id,my_app_secret,account_id,my_access_token):
     FacebookAdsApi.init(my_app_id, my_app_secret, my_access_token)
     fields = [
